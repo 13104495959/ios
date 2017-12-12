@@ -1,0 +1,24 @@
+{
+  "Mac" : [
+    {
+      "name" : "SnapKit",
+      "hash" : "d0386f6660352194e81a92d37c5c968caaaf6bada24b664fc1e2d2591d518fe9"
+    }
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+    {
+      "name" : "SnapKit",
+      "hash" : "e0ebb57ea3a884918c58c80220b320973ea04d5fb9b4d4f0815000ee65a2fe30"
+    }
+  ],
+  "commitish" : "4.0.0",
+  "iOS" : [
+    {
+      "name" : "SnapKit",
+      "hash" : "3821141ab7d33943c5c5d7ffd29f3e3e0478e3e47bbd981eeba743d9006764d5"
+    }
+  ]
+}

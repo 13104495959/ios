@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8834CB0E1FE0040E0027D166 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8834CB0D1FE0040E0027D166 /* SnapKit.framework */; };
+		8834CB141FE006910027D166 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 8834CB121FE006900027D166 /* Cartfile */; };
+		8834CB151FE006910027D166 /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = 8834CB131FE006900027D166 /* Cartfile.resolved */; };
 		884C37D91FDEAA88001EDAE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884C37D81FDEAA88001EDAE1 /* AppDelegate.swift */; };
-		884C37DB1FDEAA88001EDAE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884C37DA1FDEAA88001EDAE1 /* ViewController.swift */; };
 		884C37DE1FDEAA88001EDAE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884C37DC1FDEAA88001EDAE1 /* Main.storyboard */; };
 		884C37E11FDEAA88001EDAE1 /* NewMLCubeIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 884C37DF1FDEAA88001EDAE1 /* NewMLCubeIOS.xcdatamodeld */; };
 		884C37E31FDEAA88001EDAE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 884C37E21FDEAA88001EDAE1 /* Assets.xcassets */; };
 		884C37E61FDEAA88001EDAE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884C37E41FDEAA88001EDAE1 /* LaunchScreen.storyboard */; };
 		884C37F11FDEAA88001EDAE1 /* NewMLCubeIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884C37F01FDEAA88001EDAE1 /* NewMLCubeIOSTests.swift */; };
 		884C37FC1FDEAA88001EDAE1 /* NewMLCubeIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884C37FB1FDEAA88001EDAE1 /* NewMLCubeIOSUITests.swift */; };
+		884C38161FDEB7BB001EDAE1 /* LCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884C38151FDEB7BB001EDAE1 /* LCTabBarController.swift */; };
+		884C38191FDEB870001EDAE1 /* LCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884C38181FDEB870001EDAE1 /* LCViewController.swift */; };
+		884C381B1FDEB915001EDAE1 /* LCNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884C381A1FDEB915001EDAE1 /* LCNavigationController.swift */; };
+		884C381D1FDEB9C6001EDAE1 /* LCDeviceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884C381C1FDEB9C6001EDAE1 /* LCDeviceViewController.swift */; };
+		884C38201FDEBC33001EDAE1 /* LCOtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884C381F1FDEBC33001EDAE1 /* LCOtherViewController.swift */; };
+		884C38221FDEC391001EDAE1 /* LCQuitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884C38211FDEC391001EDAE1 /* LCQuitViewController.swift */; };
+		8850F16B1FDFF27200F2847A /* LCOtherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8850F16A1FDFF27200F2847A /* LCOtherTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8834CB0D1FE0040E0027D166 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		8834CB121FE006900027D166 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		8834CB131FE006900027D166 /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
 		884C37D51FDEAA88001EDAE1 /* NewMLCubeIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewMLCubeIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		884C37D81FDEAA88001EDAE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		884C37DA1FDEAA88001EDAE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		884C37DD1FDEAA88001EDAE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		884C37E01FDEAA88001EDAE1 /* NewMLCubeIOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewMLCubeIOS.xcdatamodel; sourceTree = "<group>"; };
 		884C37E21FDEAA88001EDAE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +60,13 @@
 		884C37F71FDEAA88001EDAE1 /* NewMLCubeIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewMLCubeIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		884C37FB1FDEAA88001EDAE1 /* NewMLCubeIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMLCubeIOSUITests.swift; sourceTree = "<group>"; };
 		884C37FD1FDEAA88001EDAE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		884C38151FDEB7BB001EDAE1 /* LCTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCTabBarController.swift; sourceTree = "<group>"; };
+		884C38181FDEB870001EDAE1 /* LCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCViewController.swift; sourceTree = "<group>"; };
+		884C381A1FDEB915001EDAE1 /* LCNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCNavigationController.swift; sourceTree = "<group>"; };
+		884C381C1FDEB9C6001EDAE1 /* LCDeviceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LCDeviceViewController.swift; path = NewMLCubeIOS/Device/Controller/LCDeviceViewController.swift; sourceTree = SOURCE_ROOT; };
+		884C381F1FDEBC33001EDAE1 /* LCOtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCOtherViewController.swift; sourceTree = "<group>"; };
+		884C38211FDEC391001EDAE1 /* LCQuitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCQuitViewController.swift; sourceTree = "<group>"; };
+		8850F16A1FDFF27200F2847A /* LCOtherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCOtherTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8834CB0E1FE0040E0027D166 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,13 +95,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8834CB0C1FE0040E0027D166 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8834CB0D1FE0040E0027D166 /* SnapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8834CB111FE0067B0027D166 /* Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				8834CB121FE006900027D166 /* Cartfile */,
+				8834CB131FE006900027D166 /* Cartfile.resolved */,
+			);
+			name = Carthage;
+			sourceTree = "<group>";
+		};
+		883D88761FDF69FD00458814 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				884C381F1FDEBC33001EDAE1 /* LCOtherViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		884C37CC1FDEAA88001EDAE1 = {
 			isa = PBXGroup;
 			children = (
+				8834CB111FE0067B0027D166 /* Carthage */,
 				884C37D71FDEAA88001EDAE1 /* NewMLCubeIOS */,
 				884C37EF1FDEAA88001EDAE1 /* NewMLCubeIOSTests */,
 				884C37FA1FDEAA88001EDAE1 /* NewMLCubeIOSUITests */,
 				884C37D61FDEAA88001EDAE1 /* Products */,
+				8834CB0C1FE0040E0027D166 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +179,7 @@
 		884C38091FDEB144001EDAE1 /* Quit */ = {
 			isa = PBXGroup;
 			children = (
+				884C38211FDEC391001EDAE1 /* LCQuitViewController.swift */,
 			);
 			path = Quit;
 			sourceTree = "<group>";
@@ -140,6 +187,8 @@
 		884C380A1FDEB14B001EDAE1 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				8850F1691FDFF25B00F2847A /* View */,
+				883D88761FDF69FD00458814 /* Controller */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -147,7 +196,7 @@
 		884C380B1FDEB14F001EDAE1 /* Device */ = {
 			isa = PBXGroup;
 			children = (
-				884C37DA1FDEAA88001EDAE1 /* ViewController.swift */,
+				884C38231FDEDE16001EDAE1 /* Controller */,
 			);
 			path = Device;
 			sourceTree = "<group>";
@@ -220,8 +269,27 @@
 		884C38141FDEB61E001EDAE1 /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
+				884C38151FDEB7BB001EDAE1 /* LCTabBarController.swift */,
+				884C38181FDEB870001EDAE1 /* LCViewController.swift */,
+				884C381A1FDEB915001EDAE1 /* LCNavigationController.swift */,
 			);
 			path = BaseClass;
+			sourceTree = "<group>";
+		};
+		884C38231FDEDE16001EDAE1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				884C381C1FDEB9C6001EDAE1 /* LCDeviceViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8850F1691FDFF25B00F2847A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8850F16A1FDFF27200F2847A /* LCOtherTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +302,7 @@
 				884C37D11FDEAA88001EDAE1 /* Sources */,
 				884C37D21FDEAA88001EDAE1 /* Frameworks */,
 				884C37D31FDEAA88001EDAE1 /* Resources */,
+				8834CB0F1FE0043C0027D166 /* Run Script Carthage */,
 			);
 			buildRules = (
 			);
@@ -333,6 +402,8 @@
 			files = (
 				884C37E61FDEAA88001EDAE1 /* LaunchScreen.storyboard in Resources */,
 				884C37E31FDEAA88001EDAE1 /* Assets.xcassets in Resources */,
+				8834CB141FE006910027D166 /* Cartfile in Resources */,
+				8834CB151FE006910027D166 /* Cartfile.resolved in Resources */,
 				884C37DE1FDEAA88001EDAE1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,14 +424,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8834CB0F1FE0043C0027D166 /* Run Script Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			name = "Run Script Carthage";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		884C37D11FDEAA88001EDAE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				884C37DB1FDEAA88001EDAE1 /* ViewController.swift in Sources */,
 				884C37D91FDEAA88001EDAE1 /* AppDelegate.swift in Sources */,
+				884C38161FDEB7BB001EDAE1 /* LCTabBarController.swift in Sources */,
+				884C38201FDEBC33001EDAE1 /* LCOtherViewController.swift in Sources */,
+				884C381D1FDEB9C6001EDAE1 /* LCDeviceViewController.swift in Sources */,
+				8850F16B1FDFF27200F2847A /* LCOtherTableViewCell.swift in Sources */,
+				884C381B1FDEB915001EDAE1 /* LCNavigationController.swift in Sources */,
+				884C38221FDEC391001EDAE1 /* LCQuitViewController.swift in Sources */,
 				884C37E11FDEAA88001EDAE1 /* NewMLCubeIOS.xcdatamodeld in Sources */,
+				884C38191FDEB870001EDAE1 /* LCViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,7 +623,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YJ8FL99K5N;
-				INFOPLIST_FILE = NewMLCubeIOS/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = NewMLCubeIOS/Config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MirrorLift.NewMLCubeIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -543,7 +642,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YJ8FL99K5N;
-				INFOPLIST_FILE = NewMLCubeIOS/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = NewMLCubeIOS/Config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MirrorLift.NewMLCubeIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -17,6 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+//        根据屏幕大小初始化视图
+        window = UIWindow.init(frame: UIScreen.main.bounds)
+//        把当前视图指定为主视图
+        window?.makeKeyAndVisible()
+//        设置视图的跟控制器
+        window?.rootViewController = LCTabBarController()
+        
         return true
     }
 

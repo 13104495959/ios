@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8803132D1FE207D80041465B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8803132C1FE207D80041465B /* AppDelegate.swift */; };
+		8803132F1FE207D80041465B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8803132E1FE207D80041465B /* ViewController.swift */; };
+		880313321FE207D80041465B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 880313301FE207D80041465B /* Main.storyboard */; };
+		880313351FE207D80041465B /* XmppInstallTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 880313331FE207D80041465B /* XmppInstallTest.xcdatamodeld */; };
+		880313371FE207D80041465B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 880313361FE207D80041465B /* Assets.xcassets */; };
+		8803133A1FE207D80041465B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 880313381FE207D80041465B /* LaunchScreen.storyboard */; };
+		880313451FE207D90041465B /* XmppInstallTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880313441FE207D90041465B /* XmppInstallTestTests.swift */; };
+		880313501FE207D90041465B /* XmppInstallTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8803134F1FE207D90041465B /* XmppInstallTestUITests.swift */; };
+		880313711FE218C30041465B /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8803136D1FE210C00041465B /* libxml2.tbd */; };
+		880313721FE218E20041465B /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8803136F1FE210CF0041465B /* libresolv.tbd */; };
+		880313741FE2196B0041465B /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 880313601FE20FC50041465B /* CocoaLumberjack.framework */; };
+		880313751FE219DC0041465B /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 880313621FE20FC50041465B /* CocoaLumberjackSwift.framework */; };
+		880313761FE21A2D0041465B /* KissXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 880313631FE20FC50041465B /* KissXML.framework */; };
+		880313781FE21BF00041465B /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 880313611FE20FC50041465B /* CocoaAsyncSocket.framework */; };
+		880313791FE21D320041465B /* libidn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8803135F1FE20FC50041465B /* libidn.framework */; };
+		8803137A1FE21E010041465B /* XMPPFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8803135E1FE20FC50041465B /* XMPPFramework.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		880313411FE207D90041465B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 880313211FE207D80041465B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 880313281FE207D80041465B;
+			remoteInfo = XmppInstallTest;
+		};
+		8803134C1FE207D90041465B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 880313211FE207D80041465B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 880313281FE207D80041465B;
+			remoteInfo = XmppInstallTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		880313291FE207D80041465B /* XmppInstallTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XmppInstallTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8803132C1FE207D80041465B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8803132E1FE207D80041465B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		880313311FE207D80041465B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		880313341FE207D80041465B /* XmppInstallTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XmppInstallTest.xcdatamodel; sourceTree = "<group>"; };
+		880313361FE207D80041465B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		880313391FE207D80041465B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8803133B1FE207D90041465B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		880313401FE207D90041465B /* XmppInstallTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XmppInstallTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		880313441FE207D90041465B /* XmppInstallTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmppInstallTestTests.swift; sourceTree = "<group>"; };
+		880313461FE207D90041465B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8803134B1FE207D90041465B /* XmppInstallTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XmppInstallTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8803134F1FE207D90041465B /* XmppInstallTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmppInstallTestUITests.swift; sourceTree = "<group>"; };
+		880313511FE207D90041465B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8803135E1FE20FC50041465B /* XMPPFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XMPPFramework.framework; path = Carthage/Build/iOS/XMPPFramework.framework; sourceTree = "<group>"; };
+		8803135F1FE20FC50041465B /* libidn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libidn.framework; path = Carthage/Build/iOS/libidn.framework; sourceTree = "<group>"; };
+		880313601FE20FC50041465B /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
+		880313611FE20FC50041465B /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
+		880313621FE20FC50041465B /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
+		880313631FE20FC50041465B /* KissXML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KissXML.framework; path = Carthage/Build/iOS/KissXML.framework; sourceTree = "<group>"; };
+		880313641FE20FC50041465B /* XMPPFrameworkSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XMPPFrameworkSwift.framework; path = Carthage/Build/iOS/XMPPFrameworkSwift.framework; sourceTree = "<group>"; };
+		8803136D1FE210C00041465B /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		8803136F1FE210CF0041465B /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		880313261FE207D80041465B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8803137A1FE21E010041465B /* XMPPFramework.framework in Frameworks */,
+				880313791FE21D320041465B /* libidn.framework in Frameworks */,
+				880313781FE21BF00041465B /* CocoaAsyncSocket.framework in Frameworks */,
+				880313761FE21A2D0041465B /* KissXML.framework in Frameworks */,
+				880313751FE219DC0041465B /* CocoaLumberjackSwift.framework in Frameworks */,
+				880313741FE2196B0041465B /* CocoaLumberjack.framework in Frameworks */,
+				880313721FE218E20041465B /* libresolv.tbd in Frameworks */,
+				880313711FE218C30041465B /* libxml2.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8803133D1FE207D90041465B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		880313481FE207D90041465B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		880313201FE207D80041465B = {
+			isa = PBXGroup;
+			children = (
+				8803132B1FE207D80041465B /* XmppInstallTest */,
+				880313431FE207D90041465B /* XmppInstallTestTests */,
+				8803134E1FE207D90041465B /* XmppInstallTestUITests */,
+				8803132A1FE207D80041465B /* Products */,
+				8803135D1FE20FC40041465B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8803132A1FE207D80041465B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				880313291FE207D80041465B /* XmppInstallTest.app */,
+				880313401FE207D90041465B /* XmppInstallTestTests.xctest */,
+				8803134B1FE207D90041465B /* XmppInstallTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8803132B1FE207D80041465B /* XmppInstallTest */ = {
+			isa = PBXGroup;
+			children = (
+				8803132C1FE207D80041465B /* AppDelegate.swift */,
+				8803132E1FE207D80041465B /* ViewController.swift */,
+				880313301FE207D80041465B /* Main.storyboard */,
+				880313361FE207D80041465B /* Assets.xcassets */,
+				880313381FE207D80041465B /* LaunchScreen.storyboard */,
+				8803133B1FE207D90041465B /* Info.plist */,
+				880313331FE207D80041465B /* XmppInstallTest.xcdatamodeld */,
+			);
+			path = XmppInstallTest;
+			sourceTree = "<group>";
+		};
+		880313431FE207D90041465B /* XmppInstallTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				880313441FE207D90041465B /* XmppInstallTestTests.swift */,
+				880313461FE207D90041465B /* Info.plist */,
+			);
+			path = XmppInstallTestTests;
+			sourceTree = "<group>";
+		};
+		8803134E1FE207D90041465B /* XmppInstallTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8803134F1FE207D90041465B /* XmppInstallTestUITests.swift */,
+				880313511FE207D90041465B /* Info.plist */,
+			);
+			path = XmppInstallTestUITests;
+			sourceTree = "<group>";
+		};
+		8803135D1FE20FC40041465B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8803136F1FE210CF0041465B /* libresolv.tbd */,
+				8803136D1FE210C00041465B /* libxml2.tbd */,
+				880313611FE20FC50041465B /* CocoaAsyncSocket.framework */,
+				880313601FE20FC50041465B /* CocoaLumberjack.framework */,
+				880313621FE20FC50041465B /* CocoaLumberjackSwift.framework */,
+				880313631FE20FC50041465B /* KissXML.framework */,
+				8803135F1FE20FC50041465B /* libidn.framework */,
+				8803135E1FE20FC50041465B /* XMPPFramework.framework */,
+				880313641FE20FC50041465B /* XMPPFrameworkSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		880313281FE207D80041465B /* XmppInstallTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 880313541FE207D90041465B /* Build configuration list for PBXNativeTarget "XmppInstallTest" */;
+			buildPhases = (
+				880313251FE207D80041465B /* Sources */,
+				880313261FE207D80041465B /* Frameworks */,
+				880313271FE207D80041465B /* Resources */,
+				880313731FE218F70041465B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XmppInstallTest;
+			productName = XmppInstallTest;
+			productReference = 880313291FE207D80041465B /* XmppInstallTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8803133F1FE207D90041465B /* XmppInstallTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 880313571FE207D90041465B /* Build configuration list for PBXNativeTarget "XmppInstallTestTests" */;
+			buildPhases = (
+				8803133C1FE207D90041465B /* Sources */,
+				8803133D1FE207D90041465B /* Frameworks */,
+				8803133E1FE207D90041465B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				880313421FE207D90041465B /* PBXTargetDependency */,
+			);
+			name = XmppInstallTestTests;
+			productName = XmppInstallTestTests;
+			productReference = 880313401FE207D90041465B /* XmppInstallTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8803134A1FE207D90041465B /* XmppInstallTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8803135A1FE207D90041465B /* Build configuration list for PBXNativeTarget "XmppInstallTestUITests" */;
+			buildPhases = (
+				880313471FE207D90041465B /* Sources */,
+				880313481FE207D90041465B /* Frameworks */,
+				880313491FE207D90041465B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8803134D1FE207D90041465B /* PBXTargetDependency */,
+			);
+			name = XmppInstallTestUITests;
+			productName = XmppInstallTestUITests;
+			productReference = 8803134B1FE207D90041465B /* XmppInstallTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		880313211FE207D80041465B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "宫赫";
+				TargetAttributes = {
+					880313281FE207D80041465B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					8803133F1FE207D90041465B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 880313281FE207D80041465B;
+					};
+					8803134A1FE207D90041465B = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 880313281FE207D80041465B;
+					};
+				};
+			};
+			buildConfigurationList = 880313241FE207D80041465B /* Build configuration list for PBXProject "XmppInstallTest" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 880313201FE207D80041465B;
+			productRefGroup = 8803132A1FE207D80041465B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				880313281FE207D80041465B /* XmppInstallTest */,
+				8803133F1FE207D90041465B /* XmppInstallTestTests */,
+				8803134A1FE207D90041465B /* XmppInstallTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		880313271FE207D80041465B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8803133A1FE207D80041465B /* LaunchScreen.storyboard in Resources */,
+				880313371FE207D80041465B /* Assets.xcassets in Resources */,
+				880313321FE207D80041465B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8803133E1FE207D90041465B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		880313491FE207D90041465B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		880313731FE218F70041465B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjack.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjackSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/KissXML.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaAsyncSocket.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/libidn.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/XMPPFramework.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		880313251FE207D80041465B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8803132F1FE207D80041465B /* ViewController.swift in Sources */,
+				880313351FE207D80041465B /* XmppInstallTest.xcdatamodeld in Sources */,
+				8803132D1FE207D80041465B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8803133C1FE207D90041465B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				880313451FE207D90041465B /* XmppInstallTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		880313471FE207D90041465B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				880313501FE207D90041465B /* XmppInstallTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		880313421FE207D90041465B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 880313281FE207D80041465B /* XmppInstallTest */;
+			targetProxy = 880313411FE207D90041465B /* PBXContainerItemProxy */;
+		};
+		8803134D1FE207D90041465B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 880313281FE207D80041465B /* XmppInstallTest */;
+			targetProxy = 8803134C1FE207D90041465B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		880313301FE207D80041465B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				880313311FE207D80041465B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		880313381FE207D80041465B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				880313391FE207D80041465B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		880313521FE207D90041465B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		880313531FE207D90041465B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		880313551FE207D90041465B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJ8FL99K5N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = XmppInstallTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MirrorLift.XmppInstallTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		880313561FE207D90041465B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJ8FL99K5N;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = XmppInstallTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MirrorLift.XmppInstallTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		880313581FE207D90041465B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJ8FL99K5N;
+				INFOPLIST_FILE = XmppInstallTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MirrorLift.XmppInstallTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XmppInstallTest.app/XmppInstallTest";
+			};
+			name = Debug;
+		};
+		880313591FE207D90041465B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJ8FL99K5N;
+				INFOPLIST_FILE = XmppInstallTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MirrorLift.XmppInstallTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XmppInstallTest.app/XmppInstallTest";
+			};
+			name = Release;
+		};
+		8803135B1FE207D90041465B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJ8FL99K5N;
+				INFOPLIST_FILE = XmppInstallTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MirrorLift.XmppInstallTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XmppInstallTest;
+			};
+			name = Debug;
+		};
+		8803135C1FE207D90041465B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YJ8FL99K5N;
+				INFOPLIST_FILE = XmppInstallTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MirrorLift.XmppInstallTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XmppInstallTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		880313241FE207D80041465B /* Build configuration list for PBXProject "XmppInstallTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				880313521FE207D90041465B /* Debug */,
+				880313531FE207D90041465B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		880313541FE207D90041465B /* Build configuration list for PBXNativeTarget "XmppInstallTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				880313551FE207D90041465B /* Debug */,
+				880313561FE207D90041465B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		880313571FE207D90041465B /* Build configuration list for PBXNativeTarget "XmppInstallTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				880313581FE207D90041465B /* Debug */,
+				880313591FE207D90041465B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8803135A1FE207D90041465B /* Build configuration list for PBXNativeTarget "XmppInstallTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8803135B1FE207D90041465B /* Debug */,
+				8803135C1FE207D90041465B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		880313331FE207D80041465B /* XmppInstallTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				880313341FE207D80041465B /* XmppInstallTest.xcdatamodel */,
+			);
+			currentVersion = 880313341FE207D80041465B /* XmppInstallTest.xcdatamodel */;
+			path = XmppInstallTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 880313211FE207D80041465B /* Project object */;
+}

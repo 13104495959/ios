@@ -7,9 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8803130F1FE11F920041465B /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8834CB2C1FE111370027D166 /* CocoaAsyncSocket.framework */; };
+		880313101FE11F920041465B /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8834CB261FE111370027D166 /* CocoaLumberjack.framework */; };
+		880313111FE11F920041465B /* KissXML.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8834CB281FE111370027D166 /* KissXML.framework */; };
+		880313131FE11F920041465B /* XMPPFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8834CB2B1FE111370027D166 /* XMPPFramework.framework */; };
+		880313161FE127120041465B /* XMPPFrameworkSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8834CB271FE111370027D166 /* XMPPFrameworkSwift.framework */; };
+		880313181FE203DB0041465B /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 880313171FE203DB0041465B /* libxml2.tbd */; };
+		8803131A1FE203EB0041465B /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 880313191FE203EB0041465B /* libresolv.tbd */; };
+		8803131F1FE205F30041465B /* libidn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8834CB2A1FE111370027D166 /* libidn.framework */; };
 		8834CB0E1FE0040E0027D166 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8834CB0D1FE0040E0027D166 /* SnapKit.framework */; };
 		8834CB141FE006910027D166 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 8834CB121FE006900027D166 /* Cartfile */; };
 		8834CB151FE006910027D166 /* Cartfile.resolved in Resources */ = {isa = PBXBuildFile; fileRef = 8834CB131FE006900027D166 /* Cartfile.resolved */; };
+		8834CB171FE0BBC20027D166 /* LCOtherTableVIewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8834CB161FE0BBC20027D166 /* LCOtherTableVIewHeader.swift */; };
+		8834CB191FE0BBE10027D166 /* LCOtherTableVIewFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8834CB181FE0BBE10027D166 /* LCOtherTableVIewFooterView.swift */; };
+		8834CB1E1FE0C64C0027D166 /* HeadFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8834CB1D1FE0C64C0027D166 /* HeadFile.swift */; };
+		8834CB211FE0CA070027D166 /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8834CB201FE0CA070027D166 /* Macros.swift */; };
 		884C37D91FDEAA88001EDAE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884C37D81FDEAA88001EDAE1 /* AppDelegate.swift */; };
 		884C37DE1FDEAA88001EDAE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 884C37DC1FDEAA88001EDAE1 /* Main.storyboard */; };
 		884C37E11FDEAA88001EDAE1 /* NewMLCubeIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 884C37DF1FDEAA88001EDAE1 /* NewMLCubeIOS.xcdatamodeld */; };
@@ -44,9 +56,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		880313171FE203DB0041465B /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		880313191FE203EB0041465B /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		8834CB0D1FE0040E0027D166 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		8834CB121FE006900027D166 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		8834CB131FE006900027D166 /* Cartfile.resolved */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
+		8834CB161FE0BBC20027D166 /* LCOtherTableVIewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCOtherTableVIewHeader.swift; sourceTree = "<group>"; };
+		8834CB181FE0BBE10027D166 /* LCOtherTableVIewFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCOtherTableVIewFooterView.swift; sourceTree = "<group>"; };
+		8834CB1D1FE0C64C0027D166 /* HeadFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadFile.swift; sourceTree = "<group>"; };
+		8834CB201FE0CA070027D166 /* Macros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macros.swift; sourceTree = "<group>"; };
+		8834CB261FE111370027D166 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
+		8834CB271FE111370027D166 /* XMPPFrameworkSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XMPPFrameworkSwift.framework; path = Carthage/Build/iOS/XMPPFrameworkSwift.framework; sourceTree = "<group>"; };
+		8834CB281FE111370027D166 /* KissXML.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KissXML.framework; path = Carthage/Build/iOS/KissXML.framework; sourceTree = "<group>"; };
+		8834CB291FE111370027D166 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
+		8834CB2A1FE111370027D166 /* libidn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libidn.framework; path = Carthage/Build/iOS/libidn.framework; sourceTree = "<group>"; };
+		8834CB2B1FE111370027D166 /* XMPPFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XMPPFramework.framework; path = Carthage/Build/iOS/XMPPFramework.framework; sourceTree = "<group>"; };
+		8834CB2C1FE111370027D166 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaAsyncSocket.framework; path = Carthage/Build/iOS/CocoaAsyncSocket.framework; sourceTree = "<group>"; };
 		884C37D51FDEAA88001EDAE1 /* NewMLCubeIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewMLCubeIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		884C37D81FDEAA88001EDAE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		884C37DD1FDEAA88001EDAE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,7 +99,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8803131F1FE205F30041465B /* libidn.framework in Frameworks */,
+				8803131A1FE203EB0041465B /* libresolv.tbd in Frameworks */,
+				880313181FE203DB0041465B /* libxml2.tbd in Frameworks */,
+				880313161FE127120041465B /* XMPPFrameworkSwift.framework in Frameworks */,
+				8803130F1FE11F920041465B /* CocoaAsyncSocket.framework in Frameworks */,
+				880313101FE11F920041465B /* CocoaLumberjack.framework in Frameworks */,
+				880313111FE11F920041465B /* KissXML.framework in Frameworks */,
 				8834CB0E1FE0040E0027D166 /* SnapKit.framework in Frameworks */,
+				880313131FE11F920041465B /* XMPPFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +131,15 @@
 		8834CB0C1FE0040E0027D166 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				880313191FE203EB0041465B /* libresolv.tbd */,
+				880313171FE203DB0041465B /* libxml2.tbd */,
+				8834CB2C1FE111370027D166 /* CocoaAsyncSocket.framework */,
+				8834CB261FE111370027D166 /* CocoaLumberjack.framework */,
+				8834CB291FE111370027D166 /* CocoaLumberjackSwift.framework */,
+				8834CB281FE111370027D166 /* KissXML.framework */,
+				8834CB2A1FE111370027D166 /* libidn.framework */,
+				8834CB2B1FE111370027D166 /* XMPPFramework.framework */,
+				8834CB271FE111370027D166 /* XMPPFrameworkSwift.framework */,
 				8834CB0D1FE0040E0027D166 /* SnapKit.framework */,
 			);
 			name = Frameworks;
@@ -110,6 +152,15 @@
 				8834CB131FE006900027D166 /* Cartfile.resolved */,
 			);
 			name = Carthage;
+			sourceTree = "<group>";
+		};
+		8834CB1F1FE0C9CE0027D166 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				8834CB1D1FE0C64C0027D166 /* HeadFile.swift */,
+				8834CB201FE0CA070027D166 /* Macros.swift */,
+			);
+			path = Const;
 			sourceTree = "<group>";
 		};
 		883D88761FDF69FD00458814 /* Controller */ = {
@@ -262,6 +313,7 @@
 		884C38131FDEB531001EDAE1 /* Expand */ = {
 			isa = PBXGroup;
 			children = (
+				8834CB1F1FE0C9CE0027D166 /* Const */,
 			);
 			path = Expand;
 			sourceTree = "<group>";
@@ -288,6 +340,8 @@
 			isa = PBXGroup;
 			children = (
 				8850F16A1FDFF27200F2847A /* LCOtherTableViewCell.swift */,
+				8834CB161FE0BBC20027D166 /* LCOtherTableVIewHeader.swift */,
+				8834CB181FE0BBE10027D166 /* LCOtherTableVIewFooterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -427,11 +481,17 @@
 /* Begin PBXShellScriptBuildPhase section */
 		8834CB0F1FE0043C0027D166 /* Run Script Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaAsyncSocket.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/KissXML.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/XMPPFramework.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjackSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjack.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/XMPPFramework.framework",
 			);
 			name = "Run Script Carthage";
 			outputPaths = (
@@ -447,13 +507,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8834CB191FE0BBE10027D166 /* LCOtherTableVIewFooterView.swift in Sources */,
+				8834CB171FE0BBC20027D166 /* LCOtherTableVIewHeader.swift in Sources */,
 				884C37D91FDEAA88001EDAE1 /* AppDelegate.swift in Sources */,
 				884C38161FDEB7BB001EDAE1 /* LCTabBarController.swift in Sources */,
 				884C38201FDEBC33001EDAE1 /* LCOtherViewController.swift in Sources */,
 				884C381D1FDEB9C6001EDAE1 /* LCDeviceViewController.swift in Sources */,
 				8850F16B1FDFF27200F2847A /* LCOtherTableViewCell.swift in Sources */,
+				8834CB1E1FE0C64C0027D166 /* HeadFile.swift in Sources */,
 				884C381B1FDEB915001EDAE1 /* LCNavigationController.swift in Sources */,
 				884C38221FDEC391001EDAE1 /* LCQuitViewController.swift in Sources */,
+				8834CB211FE0CA070027D166 /* Macros.swift in Sources */,
 				884C37E11FDEAA88001EDAE1 /* NewMLCubeIOS.xcdatamodeld in Sources */,
 				884C38191FDEB870001EDAE1 /* LCViewController.swift in Sources */,
 			);
@@ -621,6 +685,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YJ8FL99K5N;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -628,9 +693,11 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = NewMLCubeIOS/Config/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MirrorLift.NewMLCubeIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -640,6 +707,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YJ8FL99K5N;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -647,9 +715,11 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = NewMLCubeIOS/Config/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MirrorLift.NewMLCubeIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -1,0 +1,13 @@
+{
+  "commitish" : "3.3.0",
+  "iOS" : [
+    {
+      "name" : "CocoaLumberjackSwift",
+      "hash" : "28e27e74fc2e2080d899331696a970f7f764069507921a10ac6ce2060975b035"
+    },
+    {
+      "name" : "CocoaLumberjack",
+      "hash" : "bfbd5af6b3fe3d959b1fba933931c7e711e8e51e915d597309e4448f153a8448"
+    }
+  ]
+}

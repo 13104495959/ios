@@ -1,0 +1,9 @@
+{
+  "commitish" : "5.2.1",
+  "iOS" : [
+    {
+      "name" : "KissXML",
+      "hash" : "94f8d127270e06dc2a4d668838b5d53d8ce9c87c85a27236beaf3bbe254c3f41"
+    }
+  ]
+}

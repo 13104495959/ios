@@ -1,0 +1,9 @@
+{
+  "commitish" : "1.33.1",
+  "iOS" : [
+    {
+      "name" : "libidn",
+      "hash" : "2c1064dd6ba35752c735d98e135902faea9ec0633ae49b27a7046f85462034e5"
+    }
+  ]
+}

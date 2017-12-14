@@ -1,1 +1,6 @@
+github "CocoaLumberjack/CocoaLumberjack" "3.3.0"
 github "SnapKit/SnapKit" "4.0.0"
+github "chrisballinger/libidn-framework" "1.33.1"
+github "robbiehanson/CocoaAsyncSocket" "7.6.2"
+github "robbiehanson/KissXML" "5.2.1"
+github "robbiehanson/XMPPFramework" "d52de9e2ca9f1a84ed377b42b5dba9ee5061e06a"

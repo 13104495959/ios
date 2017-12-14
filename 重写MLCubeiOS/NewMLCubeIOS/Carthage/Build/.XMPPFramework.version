@@ -1,0 +1,13 @@
+{
+  "commitish" : "d52de9e2ca9f1a84ed377b42b5dba9ee5061e06a",
+  "iOS" : [
+    {
+      "name" : "XMPPFrameworkSwift",
+      "hash" : "b42f31dd7767f8dbfc9e274adf438e9eb9f417aae8f3ed68d66c9adb00be8d71"
+    },
+    {
+      "name" : "XMPPFramework",
+      "hash" : "c4cf85f98d0dbf761db265680ba81efb4acb785eb65784a34bb1a17c3e21cd49"
+    }
+  ]
+}

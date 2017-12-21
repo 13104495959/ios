@@ -11,10 +11,17 @@ import UIKit
 /// 设备的控制器 tabbar0
 class LCDeviceViewController: LCViewController {
 
+    let xmpp = XMPPStream()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.view.backgroundColor = UIColor.green
+        
+    
+        
+//        let memoryRealm = try! Realm(configuration: Realm.Configuration(inMemoryIdentifier: "CubeInMemoryRealm"))
+        
         
         // Do any additional setup after loading the view.
     }

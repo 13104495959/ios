@@ -1,2 +1,9 @@
 github "SnapKit/SnapKit" ~> 4.0.0
 github "robbiehanson/XMPPFramework" "master"
+github "realm/realm-cocoa"
+github "Alamofire/Alamofire" ~> 4.5
+github "SwiftyJSON/SwiftyJSON"
+github "tristanhimmelman/AlamofireObjectMapper" ~> 5.0
+github "seedotlee/MJRefresh"
+github "jdg/MBProgressHUD" ~> 1.1.0
+

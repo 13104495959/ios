@@ -3,7 +3,7 @@
   "iOS" : [
     {
       "name" : "libidn",
-      "hash" : "2c1064dd6ba35752c735d98e135902faea9ec0633ae49b27a7046f85462034e5"
+      "hash" : "16ec306c79f1debcf1629120610318c434d4dd88296a91e984959648cf2c09a5"
     }
   ]
 }

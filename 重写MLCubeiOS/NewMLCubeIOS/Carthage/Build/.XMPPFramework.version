@@ -3,11 +3,11 @@
   "iOS" : [
     {
       "name" : "XMPPFrameworkSwift",
-      "hash" : "b42f31dd7767f8dbfc9e274adf438e9eb9f417aae8f3ed68d66c9adb00be8d71"
+      "hash" : "100068e4588e7666baeb80ac48b5ff50fba1a5d53cd9a1afd286ec5e5dda189f"
     },
     {
       "name" : "XMPPFramework",
-      "hash" : "c4cf85f98d0dbf761db265680ba81efb4acb785eb65784a34bb1a17c3e21cd49"
+      "hash" : "0f1b0f16cc26949e71a4d17e16b28ee0a0b35acfd403781800fedf063e833567"
     }
   ]
 }

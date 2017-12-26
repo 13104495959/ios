@@ -25,6 +25,8 @@ extension MyService: TargetType {
 
         return URL(string: "https://raw.githubusercontent.com")!
         
+//        return URL(string: "https://api.myservice.com")!
+        
     }
     
     /// API
@@ -42,6 +44,7 @@ extension MyService: TargetType {
         case .quit:
             
             return "/tristanhimmelman/AlamofireObjectMapper/d8bb95982be8a11a2308e779bb9a9707ebe42ede/sample_json"
+//            return "/zen"
         }
 
     }
@@ -61,23 +64,26 @@ extension MyService: TargetType {
         
     }
     
+    /// 测试使用,这个如果不使用测试功能,可直接返回data对象
     var sampleData: Data {
         
-        switch self {
-        case .login(name: let name, passWord: let passWord):
-            
-            return "{\"first_name\": \"Harry\", \"last_name\": \"Potter\"}".utf8Encoded
-            
-        case .order(time: let time, count: let count, price: let price, id: let id):
-            
-            return "{\"first_name\": \"Harry\", \"last_name\": \"Potter\"}".utf8Encoded
-            
-        case .quit:
-           
-            return "[{\"userId\": \"1\", \"Title\": \"Title String\", \"Body\": \"Body String\"}]".utf8Encoded
-
-            
-    }
+        return Data()
+        
+//        switch self {
+//        case .login(name: let name, passWord: let passWord):
+//
+//            return "{\"first_name\": \"Harry\", \"last_name\": \"Potter\"}".utf8Encoded
+//
+//        case .order(time: let time, count: let count, price: let price, id: let id):
+//
+//            return "{\"first_name\": \"Harry\", \"last_name\": \"Potter\"}".utf8Encoded
+//
+//        case .quit:
+//
+//            return "[{\"userId\": \"1\", \"Title\": \"Title String\", \"Body\": \"Body String\"}]".utf8Encoded
+//            return"[]".utf8Encoded
+//
+//    }
         
         }
     

@@ -9,10 +9,10 @@
 import UIKit
 import ObjectMapper
 
-/// 天气的model
-class WeatherResponse: Mappable {
+/// 天气model
+class WeatherResponseModel: Mappable {
     var location: String?
-    var threeDayForecast: [Forecast]?
+    var threeDayForecast: [ForecastModel]?
     
     required init?(map: Map){
         
@@ -26,7 +26,7 @@ class WeatherResponse: Mappable {
     }
 }
 
-class Forecast: Mappable {
+class ForecastModel: Mappable {
     var day: String?
     var temperature: Int?
     var conditions: String?

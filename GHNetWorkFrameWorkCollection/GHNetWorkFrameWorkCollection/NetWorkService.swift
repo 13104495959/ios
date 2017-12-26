@@ -6,8 +6,4 @@
 //  Copyright © 2017年 宫赫. All rights reserved.
 //
 
-import UIKit
 
-class NetWorkService: NSObject {
-
-}

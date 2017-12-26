@@ -14,10 +14,55 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    let networkReachabilityManager = NetworkReachabilityManager()
+    
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+        
+       
+        
+        
+       return true
+        
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        networkReachabilityManager?.startListening()
+        
+        //        用这行代码来保证程序处于什么样的网络状态,true有网络,false无网络,只会执行一次
+//        networkReachabilityManager?.isReachable
+        
+            window = UIWindow(frame: UIScreen.main.bounds)
+            window?.makeKeyAndVisible()
+            window?.rootViewController = ViewController()
+  
+        networkReachabilityManager?.listener = { stauus in
+            
+            switch stauus {
+            case .notReachable:
+                
+                print("无法连接网络")
+                
+            case .reachable(.ethernetOrWiFi):
+                
+                print("wifi网络")
+                
+            case .reachable(.wwan):
+             
+                print("移动蜂窝网络")
+                
+            case .unknown:
+                
+                print("未知网络")
+                
+            }
+            
+            
+        }
+        
+        
         return true
     }
 
@@ -94,5 +139,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+}
+
+extension NetworkReachabilityManager {
+//    让NetworkReachabilityManager对象使用枚举
+    enum isOnLine{
+        
+        case Yes,No
+        
+    }
+    
 }
 

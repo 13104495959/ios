@@ -17,7 +17,7 @@ class WeatherViewModel: NSObject {
 
 //    检测网络状态(状态切换,)
     
-    let provider = MoyaProvider<MyService>()
+    let provider = MoyaProvider<MoyaService>()
     
     override init() {
 
@@ -38,10 +38,10 @@ class WeatherViewModel: NSObject {
         
         if networkReachabilityManager?.isReachable == true{
           
-            provider.rx.request(MyService.quit).mapJSON().subscribe(onSuccess: { (json) in
+            provider.rx.request(MoyaService.quit).mapJSON().subscribe(onSuccess: { (json) in
 
                 let ff = Mapper<WeatherResponseModel>().map(JSONObject: json)
-
+                
                 if let threeDayForecast = ff?.threeDayForecast {
                     for mo in threeDayForecast {
                         print(mo.day ?? nil ?? "11")

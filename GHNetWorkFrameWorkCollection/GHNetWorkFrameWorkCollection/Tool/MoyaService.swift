@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum MyService {
+enum MoyaService {
     
     case login(name: String, passWord: String)
     case order(time: String, count: String, price: String, id: String)
@@ -16,7 +16,7 @@ enum MyService {
     
 }
 
-extension MyService: TargetType {
+extension MoyaService: TargetType {
     
     
    
@@ -85,8 +85,7 @@ extension MyService: TargetType {
 //
 //    }
         
-        }
-    
+    }    
     /// 设置调用的请求方法
     var task: Task {
         

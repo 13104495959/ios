@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8899FF831FEBF04600655C9C /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8899FF821FEBF04600655C9C /* TestModel.swift */; };
+		8899FF831FEBF04600655C9C /* WeatherResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8899FF821FEBF04600655C9C /* WeatherResponseModel.swift */; };
 		8899FF8B1FECD3E000655C9C /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8899FF8A1FECD3DF00655C9C /* WeatherViewModel.swift */; };
 		8899FF8D1FECDC5C00655C9C /* Observable+ObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8899FF8C1FECDC5C00655C9C /* Observable+ObjectMapper.swift */; };
 		88D8CCCB1FEB687700CF2E38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D8CCCA1FEB687700CF2E38 /* AppDelegate.swift */; };
@@ -29,8 +29,7 @@
 		88D8CD131FEB8C7500CF2E38 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D8CD091FEB8C7500CF2E38 /* ReactiveSwift.framework */; };
 		88D8CD141FEB8C7500CF2E38 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D8CD0A1FEB8C7500CF2E38 /* RxBlocking.framework */; };
 		88D8CD151FEB8C7500CF2E38 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D8CD0B1FEB8C7500CF2E38 /* RxMoya.framework */; };
-		88D8CD1A1FEB92FA00CF2E38 /* NetWorkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D8CD191FEB92FA00CF2E38 /* NetWorkService.swift */; };
-		88D8CD1C1FEB959900CF2E38 /* ExtensionMoya.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D8CD1B1FEB959900CF2E38 /* ExtensionMoya.swift */; };
+		88D8CD1C1FEB959900CF2E38 /* MoyaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D8CD1B1FEB959900CF2E38 /* MoyaService.swift */; };
 		88D8CD1E1FEBD23400CF2E38 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D8CD1D1FEBD23400CF2E38 /* ObjectMapper.framework */; };
 		88D8CD211FEBD9B500CF2E38 /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D8CD1F1FEBD9B500CF2E38 /* MBProgressHUD.framework */; };
 		88D8CD221FEBD9B500CF2E38 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D8CD201FEBD9B500CF2E38 /* AlamofireObjectMapper.framework */; };
@@ -54,7 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8899FF821FEBF04600655C9C /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
+		8899FF821FEBF04600655C9C /* WeatherResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponseModel.swift; sourceTree = "<group>"; };
 		8899FF8A1FECD3DF00655C9C /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		8899FF8C1FECDC5C00655C9C /* Observable+ObjectMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable+ObjectMapper.swift"; sourceTree = "<group>"; };
 		88D8CCC71FEB687700CF2E38 /* GHNetWorkFrameWorkCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHNetWorkFrameWorkCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,8 +83,7 @@
 		88D8CD0A1FEB8C7500CF2E38 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		88D8CD0B1FEB8C7500CF2E38 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = "<group>"; };
 		88D8CD181FEB924600CF2E38 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
-		88D8CD191FEB92FA00CF2E38 /* NetWorkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkService.swift; sourceTree = "<group>"; };
-		88D8CD1B1FEB959900CF2E38 /* ExtensionMoya.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionMoya.swift; sourceTree = "<group>"; };
+		88D8CD1B1FEB959900CF2E38 /* MoyaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaService.swift; sourceTree = "<group>"; };
 		88D8CD1D1FEBD23400CF2E38 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		88D8CD1F1FEBD9B500CF2E38 /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBProgressHUD.framework; path = Carthage/Build/iOS/MBProgressHUD.framework; sourceTree = "<group>"; };
 		88D8CD201FEBD9B500CF2E38 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
@@ -128,7 +126,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8899FF7A1FEBEF5400655C9C /* New Group1 */ = {
+		882644951FF3400700E81B9A /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				88D8CD1B1FEB959900CF2E38 /* MoyaService.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		8899FF7A1FEBEF5400655C9C /* Mian */ = {
 			isa = PBXGroup;
 			children = (
 				8899FF7E1FEBEF6600655C9C /* Model */,
@@ -136,7 +142,7 @@
 				8899FF801FEBEFB400655C9C /* ViewModel */,
 				8899FF7F1FEBEFB100655C9C /* Controller */,
 			);
-			path = "New Group1";
+			path = Mian;
 			sourceTree = "<group>";
 		};
 		8899FF7D1FEBEF6300655C9C /* View */ = {
@@ -149,7 +155,7 @@
 		8899FF7E1FEBEF6600655C9C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8899FF821FEBF04600655C9C /* TestModel.swift */,
+				8899FF821FEBF04600655C9C /* WeatherResponseModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,7 +171,6 @@
 		8899FF801FEBEFB400655C9C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				88D8CD1B1FEB959900CF2E38 /* ExtensionMoya.swift */,
 				8899FF8A1FECD3DF00655C9C /* WeatherViewModel.swift */,
 				8899FF8C1FECDC5C00655C9C /* Observable+ObjectMapper.swift */,
 			);
@@ -196,11 +201,11 @@
 		88D8CCC91FEB687700CF2E38 /* GHNetWorkFrameWorkCollection */ = {
 			isa = PBXGroup;
 			children = (
-				8899FF7A1FEBEF5400655C9C /* New Group1 */,
 				88D8CCFC1FEB8A8400CF2E38 /* Carthage */,
+				882644951FF3400700E81B9A /* Tool */,
+				8899FF7A1FEBEF5400655C9C /* Mian */,
 				88D8CCCA1FEB687700CF2E38 /* AppDelegate.swift */,
 				88D8CD181FEB924600CF2E38 /* Header.h */,
-				88D8CD191FEB92FA00CF2E38 /* NetWorkService.swift */,
 				88D8CCCE1FEB687700CF2E38 /* Main.storyboard */,
 				88D8CCD41FEB687700CF2E38 /* Assets.xcassets */,
 				88D8CCD61FEB687700CF2E38 /* LaunchScreen.storyboard */,
@@ -425,12 +430,11 @@
 			files = (
 				88D8CCD31FEB687700CF2E38 /* GHNetWorkFrameWorkCollection.xcdatamodeld in Sources */,
 				88D8CCCD1FEB687700CF2E38 /* ViewController.swift in Sources */,
-				88D8CD1A1FEB92FA00CF2E38 /* NetWorkService.swift in Sources */,
 				8899FF8B1FECD3E000655C9C /* WeatherViewModel.swift in Sources */,
 				8899FF8D1FECDC5C00655C9C /* Observable+ObjectMapper.swift in Sources */,
-				8899FF831FEBF04600655C9C /* TestModel.swift in Sources */,
+				8899FF831FEBF04600655C9C /* WeatherResponseModel.swift in Sources */,
 				88D8CCCB1FEB687700CF2E38 /* AppDelegate.swift in Sources */,
-				88D8CD1C1FEB959900CF2E38 /* ExtensionMoya.swift in Sources */,
+				88D8CD1C1FEB959900CF2E38 /* MoyaService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

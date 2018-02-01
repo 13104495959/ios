@@ -13,6 +13,13 @@ enum MoyaService {
     case login(name: String, passWord: String)
     case order(time: String, count: String, price: String, id: String)
     case quit
+    case curAppVer
+    case createUser(firstName: String, lastName: String)
+    
+    case Create(title: String, body: String, userId: Int)
+    
+    case tagQueryOwner(pageNum: String, pageSize: String, ownerName: String, ownerId: String, startDate: String, endDate: String)
+
     
 }
 
@@ -26,6 +33,13 @@ extension MoyaService: TargetType {
         return URL(string: "https://raw.githubusercontent.com")!
         
 //        return URL(string: "https://api.myservice.com")!
+        
+//        return URL(string: "http://www.BaseURL.com")!
+        
+        
+//        return URL(string: "http://10.0.1.17:8080")!
+        
+//        return URL(string: "http://jsonplaceholder.typicode.com")!
         
     }
     
@@ -45,6 +59,22 @@ extension MoyaService: TargetType {
             
             return "/tristanhimmelman/AlamofireObjectMapper/d8bb95982be8a11a2308e779bb9a9707ebe42ede/sample_json"
 //            return "/zen"
+        case .curAppVer:
+            return "/curAppVer"
+        case .createUser(_, _):
+            return "/users"
+            
+            
+        case .Create(_, _, _):
+            return "/posts"
+            
+        case .tagQueryOwner(_, _, _, _, _, _):
+            
+            return "/mirrorlife/tag!queryOwner.sv"
+            
+            
+            
+            
         }
 
     }
@@ -53,14 +83,18 @@ extension MoyaService: TargetType {
     var method: Moya.Method {
         
         switch self {
-        case .login,.order:
+        case .login,.order, .curAppVer,.createUser, .tagQueryOwner(_, _, _, _, _, _):
             
             return .post
             
         case .quit:
             
             return .get
-    }
+            
+        case .Create(_, _, _):
+            return .post
+        
+        }
         
     }
     
@@ -90,6 +124,25 @@ extension MoyaService: TargetType {
     var task: Task {
         
         switch self {
+            
+        case .tagQueryOwner(let pageNum, let pageSize, let ownerId, let ownerName, let startDate, let endDate):
+            
+            print(pageNum + pageSize + ownerId + ownerName + startDate + endDate)
+            
+            let user = ["pageNum" : pageNum, "pageSize" : pageSize, "ownerId" : ownerId, "ownerName" : ownerName,  "startDate" : startDate, "endDate" : endDate] as [String : Any]
+            
+            let data : NSData! = try? JSONSerialization.data(withJSONObject: user, options: []) as NSData
+            //NSData转换成NSString打印输出
+            let str = NSString(data:data as Data, encoding: String.Encoding.utf8.rawValue)
+            //输出json字符串
+            print("Json Str:"); print(str as Any)
+            
+            
+            
+            return .requestParameters(parameters: ["pageNum" : pageNum, "pageSize" : pageSize, "ownerId" : ownerId, "ownerName" : ownerName,  "startDate" : startDate, "endDate" : endDate], encoding: JSONEncoding.default)
+            
+            
+            
         case .login(let name, let passWord):
             print(name,passWord)
             return .requestParameters(parameters: ["user_name" : name, "user_passWord" : passWord], encoding: JSONEncoding.default)
@@ -101,7 +154,22 @@ extension MoyaService: TargetType {
         case .quit:
             
             return .requestPlain
+        case .curAppVer:
+            
+            return .requestPlain
+            
+        case let .createUser(firstName, lastName): // Always send parameters as JSON in request body
+            return .requestParameters(parameters: ["first_name": firstName, "last_name": lastName], encoding: JSONEncoding.default)
+            
+//            title: String, body: String, userId: Int
+        case .Create(let title, let body, let userId):
+            
+            return .requestParameters(parameters: ["title": title, "body": body, "userId" : userId], encoding: JSONEncoding.default)
         }
+        
+        
+       
+        
         
         }
     

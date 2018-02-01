@@ -32,6 +32,58 @@ class WeatherViewModel: NSObject {
     typealias ErrorClosure = ((Any) -> ())?
 
     
+    func Create(successfulClosure: SuccessfulClosure, errorClosure: ErrorClosure, showView: UIView) {
+        
+        MBProgressHUD .showAdded(to: showView, animated: true)
+        
+        if networkReachabilityManager?.isReachable == true{
+            
+            provider.rx.request(MoyaService.Create(title: "", body: "", userId: 1)).mapJSON().subscribe(onSuccess: { (json) in
+                
+//                let ff = Mapper<WeatherResponseModel>().map(JSONObject: json)
+//
+//                if let threeDayForecast = ff?.threeDayForecast {
+//                    for mo in threeDayForecast {
+//                        print(mo.day ?? nil ?? "11")
+//                        print(mo.temperature ?? "22" as Any)
+//                    }
+//                }
+                
+                if successfulClosure != nil {
+                    
+                    successfulClosure!(json)
+                    
+                    
+                }
+                
+                MBProgressHUD.hide(for: showView, animated: true)
+                
+                print(json)
+                
+            }, onError: { (json) in
+                
+                if errorClosure != nil {
+                    
+                    errorClosure!(json)
+                    
+                    
+                }
+                
+                MBProgressHUD.hide(for: showView, animated: true)
+                
+                print(json)
+                
+            }).disposed(by: disposeBag)
+            
+        }else {
+            
+            print(networkReachabilityManager?.networkReachabilityStatus as Any)
+            
+        }
+        
+    }
+
+    
     func quit(successfulClosure: SuccessfulClosure, errorClosure: ErrorClosure, showView: UIView)  {
        
         MBProgressHUD .showAdded(to: showView, animated: true)
@@ -82,4 +134,79 @@ class WeatherViewModel: NSObject {
         }
     
     }
+    
+    
+    
+    
+    
+    func tagQueryOwner(successfulClosure: SuccessfulClosure, errorClosure: ErrorClosure, showView: UIView) {
+        
+        MBProgressHUD .showAdded(to: showView, animated: true)
+        
+        if networkReachabilityManager?.isReachable == true{
+
+//            provider.request(MoyaService.tagQueryOwner(pageNum: "3", pageSize: "2",  ownerName: "", ownerId: "", startDate: "2017-04-04 12:31:14", endDate: ""), completion: { (json) in
+//
+//                print(json)
+//
+//                print(json)
+//
+//            })
+        
+            provider.rx.request(MoyaService.tagQueryOwner(pageNum: "3", pageSize: "2",  ownerName: "", ownerId: "", startDate: "2017-04-04 12:31:14", endDate: "")).mapJSON().subscribe(onSuccess: { (json) in
+                
+                //                let ff = Mapper<WeatherResponseModel>().map(JSONObject: json)
+                //
+                //                if let threeDayForecast = ff?.threeDayForecast {
+                //                    for mo in threeDayForecast {
+                //                        print(mo.day ?? nil ?? "11")
+                //                        print(mo.temperature ?? "22" as Any)
+                //                    }
+                //                }
+                
+                if successfulClosure != nil {
+                    
+                    successfulClosure!(json)
+                    
+                    
+                }
+                
+                MBProgressHUD.hide(for: showView, animated: true)
+                
+                print(json)
+                
+            }, onError: { (json) in
+                
+                if errorClosure != nil {
+                    
+                    errorClosure!(json)
+                    
+                    
+                }
+                
+                MBProgressHUD.hide(for: showView, animated: true)
+                
+                print(json)
+                
+            }).disposed(by: disposeBag)
+            
+        }else {
+            
+            print(networkReachabilityManager?.networkReachabilityStatus as Any)
+            
+        }
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

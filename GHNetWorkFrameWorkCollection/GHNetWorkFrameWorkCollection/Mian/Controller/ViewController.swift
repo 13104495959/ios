@@ -16,6 +16,18 @@ class ViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
+        vm.tagQueryOwner(successfulClosure: { (json) in
+            
+            print(json)
+            print(json)
+            
+        }, errorClosure: { (json) in
+            
+            print(json)
+            print(json)
+            
+        }, showView: self.view)
+        
         
         
         vm.quit(successfulClosure: { (json) in
@@ -30,7 +42,19 @@ class ViewController: UIViewController {
             
         }, showView: self.view)
         
+        vm.Create(successfulClosure: { (model) in
+            
+            print(model)
+            print(model)
+            
+        }, errorClosure: { (model) in
+            
+            print(model)
+            print(model)
+            
+        }, showView: self.view)
         
+       
         
     }
 
@@ -61,6 +85,22 @@ class ViewController: UIViewController {
             print(json)
             
         }, showView: self.view)
+        
+        
+        vm.tagQueryOwner(successfulClosure: { (json) in
+            
+            print(json)
+            print(json)
+            
+        }, errorClosure: { (json) in
+            
+            
+            print(json)
+            print(json)
+            
+        }, showView: self.view)
+        
+        
 
     }
 

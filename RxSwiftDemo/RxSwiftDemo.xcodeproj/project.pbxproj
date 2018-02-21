@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88593737202846EE00699C45 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88593736202846EE00699C45 /* MainViewController.swift */; };
+		8859373920284E7400699C45 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8859373820284E7400699C45 /* FirstViewController.swift */; };
+		8859373B20294F3700699C45 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8859373A20294F3700699C45 /* SnapKit.framework */; };
+		8859373D202976DC00699C45 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8859373C202976DC00699C45 /* SecondViewController.swift */; };
 		88769B57202199E9003C05C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88769B56202199E9003C05C2 /* AppDelegate.swift */; };
 		88769B59202199E9003C05C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88769B58202199E9003C05C2 /* ViewController.swift */; };
 		88769B5C202199E9003C05C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88769B5A202199E9003C05C2 /* Main.storyboard */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		88593736202846EE00699C45 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8859373820284E7400699C45 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		8859373A20294F3700699C45 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		8859373C202976DC00699C45 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		88769B53202199E9003C05C2 /* RxSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88769B56202199E9003C05C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88769B58202199E9003C05C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8859373B20294F3700699C45 /* SnapKit.framework in Frameworks */,
 				88769B6E20219AD8003C05C2 /* RxSwift.framework in Frameworks */,
 				88769B6F20219AD8003C05C2 /* RxCocoa.framework in Frameworks */,
 				88769B7020219AD8003C05C2 /* RxBlocking.framework in Frameworks */,
@@ -68,6 +77,9 @@
 			isa = PBXGroup;
 			children = (
 				88769B56202199E9003C05C2 /* AppDelegate.swift */,
+				88593736202846EE00699C45 /* MainViewController.swift */,
+				8859373820284E7400699C45 /* FirstViewController.swift */,
+				8859373C202976DC00699C45 /* SecondViewController.swift */,
 				88769B58202199E9003C05C2 /* ViewController.swift */,
 				88769B5A202199E9003C05C2 /* Main.storyboard */,
 				88769B5D202199E9003C05C2 /* Assets.xcassets */,
@@ -80,6 +92,7 @@
 		88769B6A20219AD8003C05C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8859373A20294F3700699C45 /* SnapKit.framework */,
 				88769B6D20219AD8003C05C2 /* RxBlocking.framework */,
 				88769B6C20219AD8003C05C2 /* RxCocoa.framework */,
 				88769B6B20219AD8003C05C2 /* RxSwift.framework */,
@@ -166,6 +179,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
 			);
 			name = "Run Script Carthage";
 			outputPaths = (
@@ -181,8 +195,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88593737202846EE00699C45 /* MainViewController.swift in Sources */,
 				88769B59202199E9003C05C2 /* ViewController.swift in Sources */,
 				88769B57202199E9003C05C2 /* AppDelegate.swift in Sources */,
+				8859373D202976DC00699C45 /* SecondViewController.swift in Sources */,
+				8859373920284E7400699C45 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
